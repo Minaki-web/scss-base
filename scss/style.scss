@@ -1,14 +1,27 @@
 //---------------------------------------------
-// base level styles
+// foundation
 //---------------------------------------------
-@use 'foundation';
+@use 'foundation/reset';
+@use 'foundation/base';
 
 //---------------------------------------------
-// layout level styles
+// layout
 //---------------------------------------------
-@use 'layout';
+@use 'layout/l-header';
+@use 'layout/l-main';
+@use 'layout/l-footer';
 
 //---------------------------------------------
-// object level styles
+// components
 //---------------------------------------------
-@use 'object';
+@use 'object/components/c-btn';
+
+//---------------------------------------------
+// project
+//---------------------------------------------
+@use 'object/project/p-articles';
+
+//---------------------------------------------
+// utility
+//---------------------------------------------
+@use 'object/utility/u-margin';
