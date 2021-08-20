@@ -1,27 +1,6 @@
-//---------------------------------------------
-// foundation
-//---------------------------------------------
-@use 'foundation/reset';
-@use 'foundation/base';
-
-//---------------------------------------------
-// layout
-//---------------------------------------------
-@use 'layout/l-header';
-@use 'layout/l-main';
-@use 'layout/l-footer';
-
-//---------------------------------------------
-// components
-//---------------------------------------------
-@use 'object/components/c-btn';
-
-//---------------------------------------------
-// project
-//---------------------------------------------
-@use 'object/project/p-articles';
-
-//---------------------------------------------
-// utility
-//---------------------------------------------
-@use 'object/utility/u-margin';
+@use 'foundation';
+@use 'layout';
+@use 'components';
+@use 'project';
+@use 'javascript';
+@use 'utility';

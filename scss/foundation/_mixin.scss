@@ -1,9 +1,0 @@
-@use './valiables' as v;
-
-@mixin responsive($breakpoint) {
-  @if map-has-key(v.$breakpoints, $breakpoint) {
-    @media screen and #{inspect(map-get(v.$breakpoints, $breakpoint))} {
-      @content;
-    }
-  }
-}

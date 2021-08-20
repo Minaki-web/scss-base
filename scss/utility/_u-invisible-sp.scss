@@ -1,0 +1,9 @@
+@use '../global' as g;
+
+.u-invisible-sp {
+  display: none;
+
+  @include g.responsive(sm) {
+    display: block;
+  }
+}

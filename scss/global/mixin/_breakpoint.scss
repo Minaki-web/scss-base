@@ -18,3 +18,11 @@ $breakpoints: (
     min-width: 1400px,
   ),
 ) !default;
+
+@mixin responsive($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}
