@@ -1,5 +1,3 @@
-/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
-
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
   all: unset;
   display: revert;
@@ -9,6 +7,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 ol,

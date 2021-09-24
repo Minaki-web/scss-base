@@ -1,9 +1,9 @@
-@use '../global' as g;
+@use '../helpers' as h;
 
 .u-invisible-sp {
   display: none;
 
-  @include g.responsive(sm) {
+  @include h.responsive(sm) {
     display: block;
   }
 }
