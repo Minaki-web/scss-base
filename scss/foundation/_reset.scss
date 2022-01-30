@@ -18,10 +18,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-ul[class],
-ol[class] {
+ul:where([class]),
+ol:where([class]) {
   padding: 0;
   list-style-type: none;
+}
+
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
 }
 
 img,
